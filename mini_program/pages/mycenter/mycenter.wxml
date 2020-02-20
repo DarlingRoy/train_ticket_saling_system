@@ -1,0 +1,58 @@
+<!--pages/mycenter/mycenter.wxml-->
+<view class="amountBg">
+  <image class="img" src="{{imageURL}}" hidden="{{!flag}}" mode="cover" />
+  <view class="account">
+    <view hidden="{{!flag}}">{{user.name}}</view>
+    <view hidden="{{flag}}" bindtap="login" class="loginbtn">请登录</view>
+  </view>
+  <view class="nav" bindtap="gotoUserInfo" hidden="{{!flag}}">></view>
+</view>
+
+<view class="clear"></view>
+
+
+<view class="item" bindtap="gotoModify">
+  <view class="icon">
+    <image src="../../images/xiugaiziliao.png" />
+  </view>
+  <view class="itemName">
+    <view>修改个人资料</view>
+  </view>
+  <view class="right">></view>
+</view>
+
+<view class="item" bindtap="gotoOrders">
+  <view class="icon">
+    <image src="../../images/icon-order.png" />
+  </view>
+  <view class="itemName">
+    <view>本人订单</view>
+  </view>
+  <view class="right">></view>
+</view>
+<view class="hr"></view>
+
+<form bindsubmit="formSubmit">
+  <view class='toast-box' hidden='{{hidden}}'>
+    <view class='toastbg'></view>
+    <view class='showToast'>
+      <view class='toast-title'>
+        <text>输入身份证号和密码</text> </view>
+      <view class='toast-main'>
+        <view class='toast-input'>
+          <input placeholder='请输入身份证号' value="{{clientID}}" bindblur="idInput"></input>
+          <view class="divLine"></view>
+          <input placeholder="请输入密码" value="{{password}}" bindblur="passwordInput" password="true"></input>
+        </view>
+      </view>
+      <view class='toast-button'>
+        <view class='button1'>
+          <button bindtap="cancel">取消</button>
+        </view>
+        <view class='button2'>
+          <button form-type="submit">确定</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</form>

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mycenter/mycenter",
+    "pages/ticket/ticket",
+    "pages/orders/orders",
+    "pages/destination/destination",
+    "pages/start/start",
+    "pages/date/date",
+    "pages/query/query",
+    "pages/userInfo/userInfo",
+    "pages/register/register",
+    "pages/modify/modify"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#5495e6",
+    "navigationBarTitleText": "高铁管家",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/shouye.png",
+        "selectedIconPath": "images/shouye2.png"
+      },
+      {
+        "pagePath": "pages/mycenter/mycenter",
+        "text": "我的",
+        "iconPath": "images/wode.png",
+        "selectedIconPath": "images/wode2.png"
+      },
+      {
+        "pagePath": "pages/register/register",
+        "text": "注册",
+        "iconPath": "images/zhuce.png",
+        "selectedIconPath": "images/zhuce2.png"
+      }
+    ],
+    "color": "#000000",
+    "selectedColor": "#17abe3"
+  }
+}

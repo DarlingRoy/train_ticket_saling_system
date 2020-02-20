@@ -1,0 +1,18 @@
+.month{
+  margin: 100rpx auto;
+  text-align: center;
+}
+
+.day{
+  display: flex;
+  justify-content: space-around;
+}
+
+.item{
+  width: 60rpx;
+  height: 60rpx;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #00BFFF;
+  color: #fff;
+}

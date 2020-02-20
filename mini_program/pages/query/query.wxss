@@ -1,0 +1,39 @@
+.page {
+}
+
+.item {
+  margin: 100rpx 20rpx;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 220rpx;
+  border: 2rpx solid #00BFFF;
+  border-radius: 10rpx;
+}
+
+.row1 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.row2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1rpx dashed #C0C0C0
+}
+
+.img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.addOne{
+  color: #F08080;
+  font-size: 30rpx;
+}

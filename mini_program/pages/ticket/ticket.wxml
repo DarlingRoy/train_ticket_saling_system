@@ -1,0 +1,35 @@
+<view class="bg-top">
+</view>
+<view class="ticket">
+  <view class="row1">
+    <view class="c1">
+      <view>{{ticket.start_station}}</view>
+      <view>{{go_time}}</view>
+    </view>
+
+    <view class="c2">
+      <view>{{ticket.train_number}}</view>
+      <image src="../../images/direction.png" class="img"></image>
+    </view>
+
+    <view class="c3">
+      <view>{{ticket.arrive_station}}</view>
+      <view>{{arrive_time}}</view>
+    </view>
+  </view>
+  <view class="row2">发车时间：{{ticket.go_date}}</view>
+
+</view>
+
+<view class="info">
+  <view class="row">
+    <view>{{name}}</view>
+    <view>{{ticket.type}}</view>
+  </view>
+  <view class="row">
+    <view>{{ticket.seat_type}}</view>
+    <view class="price">￥{{ticket.price}}</view>
+  </view>
+</view>
+
+<button class="btn" bindtap="dishonour">退票</button>

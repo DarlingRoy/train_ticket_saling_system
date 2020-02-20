@@ -1,0 +1,34 @@
+<!--pages/train/train.wxml-->
+
+<view class="page-top">
+  <image src="../../images/top/train.jpg"></image>
+</view>
+<view class="bg">
+  <view class="container">
+    <view class="query-box">
+      <view class="query-city">
+        <view class="begin-city">
+          <label bindtap="gotoStart">{{startName}}</label>
+        </view>
+        <view class="switch">
+          <image class="switch-img" src="../../images/switch.png" bindtap="switch"></image>
+        </view>
+        <view class="end-city">
+          <label bindtap="gotoDestination">{{endName}}</label>
+        </view>
+      </view>
+      <view class="query-date" bindtap="select_date">
+        <view>
+          <text class="date">出发日期： {{month}}月{{day}}日</text>
+        </view>
+      </view>
+      <view class="query-row">
+        <view class="train-checked">
+          <text>学生票</text>
+          <switch checked="{{stu_ticket}}" bindchange="stu_ticket_choose" data-stu_ticket="{{stu_ticket}}"/>
+        </view>
+      </view>
+      <button class='btn_query' bindtap="gotoQuery">查询</button>
+    </view>
+  </view>
+</view>

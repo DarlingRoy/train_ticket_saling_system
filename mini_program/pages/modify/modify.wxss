@@ -1,0 +1,67 @@
+/* pages/modify/modify.wxss */
+
+.tp {
+  width: 40px;
+  height: 40px;
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+}
+
+.H-Line {
+  background: #e0e3da;
+  width: 100%;
+  height: 2px;
+}
+
+.V-line {
+  width: 4px;
+  height: 44px;
+  background-color: rgb(163, 168, 168);
+}
+
+.V-line-last {
+  width: 4px;
+  height: 74px;
+  background-color: rgb(163, 168, 168);
+}
+
+.zw {
+  font-size: 20px;
+}
+
+.container {
+  flex-direction: row;
+  display: flex;
+}
+
+.left-ct {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.sr {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.sr-last {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-left: 8px;
+}
+
+.qd {
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  margin-top: 100rpx;
+  border-radius: 40rpx;
+}
+
+.typeText{
+  color: #808080;
+}

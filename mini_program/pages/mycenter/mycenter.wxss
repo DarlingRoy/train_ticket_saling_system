@@ -1,0 +1,200 @@
+/* pages/mycenter/mycenter.wxss */
+
+.amountBg {
+  height: 100px;
+  background-color: #5495e6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.img {
+  margin-left: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.account {
+  width: 70%;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.loginbtn{
+  margin-left: 60rpx;
+  font-size: 60rpx;
+}
+
+.nav {
+  color: #fff;
+  width: 20rpx;
+  position: fixed;
+  margin-left: 700rpx;
+}
+
+.getUserInfo {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.content {
+  background-color: #f4f4f4;
+  height: 500px;
+}
+
+.content .desc image {
+  width: 22px;
+  height: 25px;
+}
+
+.order {
+  width: 94%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 90px;
+  margin-left: 3%;
+}
+
+.desc {
+  width: 33.33%;
+  font-size: 13px;
+}
+
+.clear {
+  padding-top: 70px;
+}
+
+.item {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+.icon {
+  width: 50px;
+  text-align: center;
+}
+
+.icon image {
+  width: 22px;
+  height: 21px;
+}
+
+.itemName {
+  width: 40%;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.hr {
+  height: 1px;
+  background-color: #ccc;
+  opacity: 0.2;
+}
+
+.right {
+  width: 40%;
+  text-align: right;
+}
+
+.toast-box {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+
+.toastbg {
+  opacity: 0.2;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.showToast {
+  position: absolute;
+  opacity: 1;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 40%;
+}
+
+.toast-title {
+  padding-left: 5%;
+  background-color: #2196f3;
+  color: white;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  border-top-right-radius: 16rpx;
+  border-top-left-radius: 16rpx;
+}
+
+.toast-main {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: white;
+  text-align: center;
+}
+
+.toast-input {
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid #ddd;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.toast-button {
+  display: flex;
+}
+
+.button1 {
+  width: 50%;
+}
+
+.button2 {
+  width: 50%;
+}
+
+.button1 button {
+  width: 100%;
+  background-color: white;
+  color: red;
+  border-radius: 0px;
+  border-bottom-left-radius: 16rpx;
+}
+
+.button2 button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 0px;
+  border-bottom-right-radius: 16rpx;
+}
+
+.picker {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.divLine {
+  background: #e0e3da;
+  width: 100%;
+  height: 5rpx;
+}

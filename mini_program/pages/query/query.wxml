@@ -1,0 +1,26 @@
+<view>
+  <block wx:for="{{ticketList}}">
+    <view class="item" bindtap="buyTicket" data-ticket-id="{{item.ticket_id}}" data-go-date="{{item.go_date}}" data-go-time="{{item.go_time}}" data-remain="{{item.remain}}">
+      <view class="row1">
+        <view class="num"> {{item.train_number}}</view>
+        <view class="go">
+          <view>{{item.start_station}}</view>
+          <view>{{item.go_time}}</view>
+        </view>
+        <image src="../../images/direction.png" class="img"></image>
+        <view class="arrive">
+          <view>{{item.arrive_station}}</view>
+          <view>{{item.arrive_time}}<text hidden="{{hidden}}" class="addOne">+1</text></view>
+        </view>
+      </view>
+
+      <view class="row2">
+        <view>{{item.type}}</view>
+        <view>{{item.seat_type}}</view>
+        <view>￥{{item.price}}</view>
+        <view>余量:{{item.remain}}张</view>
+      </view>
+    </view>
+
+  </block>
+</view>

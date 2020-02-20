@@ -1,0 +1,7 @@
+<view class="content">
+  <block wx:for="{{stations}}">
+    <view class="item" bindtap="bindSelect">
+      <view data-name="{{item}}">{{item}}</view>
+    </view>
+  </block>
+</view>

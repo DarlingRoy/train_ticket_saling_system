@@ -1,0 +1,33 @@
+<view class="content" hidden="{{!hidden}}">
+  <block wx:for="{{ordersList}}" class="orders">
+    <view class="item" bindtap="bindSelect" data-ticket-id="{{item.ticket_id}}" data-order-number="{{item.order_number}}">
+      <view>
+        <view class="index">{{index+1}}</view>
+        <view class="divLine"></view>
+        
+        <view class="row">
+          <text class="left">订单编号:</text>
+          <text class="right">{{item.order_number}}</text>
+        </view>
+        <view class="divLine"></view>
+
+        <view class="row">
+          <text class="left">车票编号:</text>
+          <text class="right">{{item.ticket_id}}</text>
+        </view>
+        <view class="divLine"></view>
+
+        <view class="row">
+          <text class="left">订票时间:</text>
+          <text class="right">{{item.order_time}}</text>
+        </view>
+        <view class="divLine"></view>
+
+      </view>
+    </view>
+  </block>
+</view>
+<view hidden="{{hidden}}" class="hiddenLayer">
+  <image src="../../images/noOrders.png" class="img"></image>
+  <view class="text">没有查看到您的订单</view>
+</view>

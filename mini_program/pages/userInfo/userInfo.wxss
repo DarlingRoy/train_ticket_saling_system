@@ -1,0 +1,32 @@
+.infoList {
+  height: 600rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20rpx;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 180rpx;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.btn {
+  width: 60%;
+  border-radius: 5rpx;
+  margin-top: 60rpx;
+  padding: 0;
+  border: 1rpx solid #808080;
+}
+
+.divLine {
+  background: #e0e3da;
+  width: 100%;
+  height: 5rpx;
+}

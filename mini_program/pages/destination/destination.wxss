@@ -1,0 +1,8 @@
+.content{
+  margin: 10rpx;
+}
+
+.item{
+  height: 70rpx;
+  border-bottom: 1rpx solid #D3D3D3;
+}

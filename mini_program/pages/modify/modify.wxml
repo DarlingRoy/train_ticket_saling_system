@@ -1,0 +1,46 @@
+<view class="content">
+  <view class="tp" style="margin-bottom: 10%">
+    <image class="image" src='../../images/modify.jpg'></image>
+  </view>
+</view>
+
+<view class="H-Line"></view>
+<view class="container">
+  <view class="left-ct">
+    <text class="zw">姓名</text>
+  </view>
+  <view class='V-line'></view>
+  <input class="sr" placeholder="{{user.name}}" value="{{name}}" bindinput="modifyName" />
+</view>
+<view class="H-Line"></view>
+<view class="container">
+  <view class="left-ct">
+    <text class="zw">籍贯</text>
+  </view>
+  <view class='V-line'></view>
+  <input class="sr" placeholder="{{user.hometown}}" value="{{hometown}}" bindinput="modifyHometown" />
+</view>
+
+
+<view class="H-Line"></view>
+<view class="container">
+  <view class="left-ct">
+    <text class="zw">类型</text>
+  </view>
+  <view class='V-line'></view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{typeList}}" class="sr">
+    <text hidden="{{hidden}}" class="typeText">{{user.type}}</text>
+    <text>{{typeList[index]}}</text></picker>
+</view>
+<view class="H-Line"></view>
+<view class="container">
+  <view class="left-ct">
+    <text class="zw">联系</text>
+    <view></view>
+    <text class="zw">电话</text>
+  </view>
+  <view class='V-line-last'></view>
+  <input class="sr-last" placeholder="{{user.telphone}}" value="{{telphone}}" bindinput="modifyTelphone" />
+</view>
+<view class="H-Line"></view>
+<button class="qd" type="primary" bindtap="formSubmit">确定</button>

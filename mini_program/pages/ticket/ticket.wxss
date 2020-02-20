@@ -1,0 +1,70 @@
+.bg-top{
+  background: #5495e6;
+  width: 100%;
+  height: 200rpx;
+}
+
+.ticket{
+  width: 94%;
+	height: 300rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 10rpx;
+	position: absolute;
+	top: 150rpx;
+	margin-left: 3%;
+  box-shadow: 0 6rpx 6rpx 6rpx #778899;
+}
+
+.btn{
+  top:100rpx;
+  margin: 50rpx auto;
+  width: 60%;
+}
+
+.info{
+  margin-top: 280rpx;
+}
+
+.row{
+  display: flex;
+  justify-content: space-around;
+  margin: 20rpx auto;
+}
+
+.price{
+  color: #FFA500;
+}
+
+.row1{
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.row2{
+  margin-top: 30rpx;
+}
+
+.img {
+  width: 120rpx;
+  height: 60rpx;
+}
+
+.c1{
+  width: 33.33%;
+}
+
+.c2{
+  width: 33.33%;
+}
+
+.c3{
+  width: 33.33%;
+}
+

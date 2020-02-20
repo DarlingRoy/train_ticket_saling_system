@@ -1,0 +1,10 @@
+<view class="content">
+  <view class="month">2019-08</view>
+  <view class="day">
+    <block wx:for="{{dayList}}">
+      <view class="item">
+        <view bindtap="bindSelect" data-date="{{item}}">{{item}}</view>
+      </view>
+    </block>
+  </view>
+</view>
