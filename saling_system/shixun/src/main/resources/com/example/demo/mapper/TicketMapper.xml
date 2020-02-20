@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.demo.mapper.TicketMapper">
+    <select id="findArriveStation" resultType="String">
+        select distinct arrive_station from ticket
+    </select>
+
+    <select id="findStartStation" resultType="String">
+        select distinct start_station from ticket
+    </select>
+
+    <select id="findBy4" resultType="Ticket">
+        select * from ticket where start_station=#{arg0} and arrive_station=#{arg1} and go_date=#{arg2} and type=#{arg3}
+    </select>
+
+    <select id="findById" resultType="Ticket">
+        select * from ticket where ticket_id=#{arg0}
+    </select>
+
+    <update id="update" parameterType="Ticket">
+        update ticket set remain=#{remain} where ticket_id=#{ticket_id}
+    </update>
+</mapper>

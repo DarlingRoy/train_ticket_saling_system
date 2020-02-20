@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.example.demo.mapper.OrdersMapper">
+    <select id="findByClient_id" resultType="Orders">
+        select * from orders where client_id=#{arg0}
+    </select>
+
+    <insert id="save" parameterType="Orders">
+        insert into orders(order_number,client_id,go_date,order_time,ticket_id) values(#{order_number},#{client_id},#{go_date},#{order_time},#{ticket_id})
+    </insert>
+
+    <delete id="delete" parameterType="String">
+        delete from orders where order_number=#{arg0}
+    </delete>
+
+    <select id="findTicketIdByOrderNumber" parameterType="String" resultType="String">
+        select ticket_id from orders where order_number=#{arg0}
+    </select>
+</mapper>
